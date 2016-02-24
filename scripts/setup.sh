@@ -41,7 +41,7 @@ fi
 if [ ! -f "/usr/sbin/php-fpm" ]; then
 
     # install, chkconfig already added
-    yum intall -y php-fpm
+    yum install -y php-fpm
 
     # auto start
     chkconfig php-fpm on
@@ -59,7 +59,7 @@ fi
 if [ ! -f "/usr/sbin/redis-server" ]; then
 
     # install, chkconfig already added
-    yum intall -y redis
+    yum install -y redis
 
     # auto start
     chkconfig redis on
