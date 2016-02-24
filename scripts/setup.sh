@@ -42,6 +42,7 @@ if [ ! -f "/usr/bin/php" ]; then
 
     # install, chkconfig already added
     yum install -y php
+    yum install -y php-devel
 
 else
 
