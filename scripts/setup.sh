@@ -35,6 +35,21 @@ else
 fi
 
 #####################
+# install php
+#####################
+
+if [ ! -f "/usr/bin/php" ]; then
+
+    # install, chkconfig already added
+    yum install -y php
+
+else
+
+    echo "php already installed"
+
+fi
+
+#####################
 # install php-fpm
 #####################
 
